@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inici"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InicioActivity">
+
+    <!-- Título de Iniciar sesión -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="223dp"
+        android:layout_height="221dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo" />
+
+    <!-- Correo electrónico -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Electronico"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="32dp" />
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="16dp" />
+
+    <!-- Enlace de ¿Has olvidado la contraseña? -->
+    <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Has olvidado la contraseña?"
+        android:textColor="?attr/colorAccent"
+        android:layout_below="@id/passwordEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botón de Iniciar Sesión -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESION"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/forgotPasswordTextView"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón de Ingresar con Google -->
+    <Button
+        android:id="@+id/googleSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGRESA CON GOOGLE"
+        android:drawableStart="@drawable/iconogoo"
+        android:backgroundTint="#00BCD4"
+        android:textColor="@color/black"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+
+    <!-- Enlace de Crear cuenta -->
+
+    <Button
+        android:id="@+id/regresoCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+
+        android:backgroundTint="#E91E63"
+
+        android:text="CREAR CUENTA"
+        android:layout_below="@id/googleSignInButton"/>
+
+
+
+</RelativeLayout>

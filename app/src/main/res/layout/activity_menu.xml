@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnInventario"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="INVENTARIO"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnCarritoCompras"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="CARRITO DE COMPRAS"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnGestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="GESTION"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnProductosEnStock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="PRODUCTOS EN STOCK"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnAlmacen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="ALMACEN"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnRegistroProductos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="REGISTRO DE PRODUCTOS"
+            android:background="@drawable/button_background"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La gestión del inventario aparecerá aquí"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnInventario2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="INVENTARIO"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnCarritoCompras2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="CARRITO DE COMPRAS"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnVentas2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="VENTAS"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnProductosEnStock2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="PRODUCTOS EN STOCK"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnAlmacen2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="ALMACEN"
+            android:background="@drawable/button_background"/>
+
+        <Button
+            android:id="@+id/btnRegistroProductos2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="REGISTRO DE PRODUCTOS"
+            android:background="@drawable/button_background"/>
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Busca tus productos aquí"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"/>
+</LinearLayout>

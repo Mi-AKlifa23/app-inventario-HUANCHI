@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".GestionActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gestion de Inventario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="223dp"
+        android:layout_height="221dp"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AÑADIR PRODUCTO"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/googleSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDITAR PRODUCTO"
+        android:backgroundTint="#00BCD4"
+        android:textColor="@color/black"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/regresoCrear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/googleSignInButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#E91E63"
+        android:text="ELIMINAR PRODUCTO"
+        android:textColor="@color/white"
+        android:translationY="-40dp" />
+
+
+</RelativeLayout>
